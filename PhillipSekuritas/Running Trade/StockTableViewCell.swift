@@ -67,11 +67,7 @@ class StockTableViewCell: UITableViewCell {
         
         var color: UIColor
         
-        if changeLabel.text?.first == "+" {
-            color = .systemGreen
-        } else {
-            color = .systemRed
-        }
+        changeLabel.text?.first == "+" ? (color = .systemGreen) : (color = .systemRed)
         
         stockLabel.textColor = color
         priceLabel.textColor = color
